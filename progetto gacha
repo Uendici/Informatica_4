@@ -3,3 +3,8 @@ dovrà essere svuotato in un altro sistema fi raggruppamento e di visione dei pe
 dovrà essere all'interno di un ciclo che termina quando il giocatore tornando alla scelta della tabella
 con i tassi, i personaggi trovati potrà decidere digitando 3 di chiudere l'account e quindi di 
 conseguenza chiudere il codice, i vettori ovviamente verranno svuotati all'interno di matrici.
+
+
+potrei fare si che se esce un numero compreso tra diversi valori allora uscirà quel pg di quella rarità lì, ad esempio
+se esce un numero compreso tra 1 e 500 allora se è tra 1 e 100 sarà un pg, se esce un numero tra 101 e 200 sarà un altro
+e così via
