@@ -5,6 +5,6 @@ con i tassi, i personaggi trovati potrà decidere digitando 3 di chiudere l'acco
 conseguenza chiudere il codice, i vettori ovviamente verranno svuotati all'interno di matrici.
 
 
-potrei fare si che se esce un numero compreso tra diversi valori allora uscirà quel pg di quella rarità lì, ad esempio
-se esce un numero compreso tra 1 e 500 allora se è tra 1 e 100 sarà un pg, se esce un numero tra 101 e 200 sarà un altro
-e così via
+poi voglio fare anche che quando l'utente fa una multi allora spende 30 gemme, per prendere 120 gemme deve fare 
+una addizione tra 2 numeri e deve dire la soluzione, se è giusta li prende, se è sbagliato allora niente, ma 
+può riprovare quanto vuole.
