@@ -1,0 +1,5 @@
+fare un sistema di gacha che ti fa pescare personaggi in base al numero che ti è uscito e mettere un vettore che poi 
+dovrà essere svuotato in un altro sistema fi raggruppamento e di visione dei personaggi, tutto
+dovrà essere all'interno di un ciclo che termina quando il giocatore tornando alla scelta della tabella
+con i tassi, i personaggi trovati potrà decidere digitando 3 di chiudere l'account e quindi di 
+conseguenza chiudere il codice, i vettori ovviamente verranno svuotati all'interno di matrici.
