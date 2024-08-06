@@ -41,7 +41,7 @@ int main() {
         }
     } while (scelta1 != 4);
     
-    printf("Account terminato. Grazie per aver giocato!\n");
+    printf("hai eliminato l'account\n");
     return 0;
 }
 
