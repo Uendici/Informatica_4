@@ -1,0 +1,62 @@
+crea un programma in c che emuli il sistema di un tycoon.
+#include <stdio.h>
+#include <unistd.h>
+#include <time.h>
+
+void menu();
+void opzione1(int coins);
+void opzione2();
+void aggiorna_coins(int *coins, time_t *last_update_time);
+
+int main() {
+    char scelta1;
+    int coins = 0;
+    time_t last_update_time = time(NULL);
+
+    do {
+        menu();
+        printf("Inserisci la tua scelta: ");
+        scanf(" %c", &scelta1);
+
+        aggiorna_coins(&coins, &last_update_time);
+
+        switch(scelta1) {
+            case '1':
+                opzione1(coins);
+                break;
+            case '2':
+                opzione2();
+                break;
+            case '4':
+                printf("Uscita dal programma.\n");
+                return 0;
+            default:
+                printf("Scelta non valida, riprova.\n");
+        }
+    } while (scelta1 != '4');
+
+    return 0;
+}
+
+void menu() {
+    printf("\nScegli cosa fare e se vuoi smettere digita 4\n");
+    printf("1) Controlla quante monete hai\n");
+    printf("2) Da finire\n");
+    printf("4) Esci\n");
+}
+
+void aggiorna_coins(int *coins, time_t *last_update_time) {
+    time_t current_time = time(NULL);
+    if (difftime(current_time, *last_update_time) >= 5) {
+        *coins += 5;
+        *last_update_time = current_time;
+    }
+}
+
+void opzione1(int x) {
+    printf("Attualmente hai %d monete\n", x);
+}
+
+void opzione2() {
+    printf("Opzione 2: funzionalità da implementare.\n");
+}
