@@ -1,4 +1,4 @@
-crea un programma in c che emuli il sistema di un tycoon.
+//crea un programma in c che emuli il sistema di un tycoon.
 #include <stdio.h>
 #include <unistd.h>
 #include <time.h>
