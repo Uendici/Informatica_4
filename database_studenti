@@ -1,0 +1,34 @@
+CREATE TABLE Studenti
+(
+	id_studente int auto_increment primary key,
+	nome varchar(40) NOT NULL,
+	cognome varchar(40) NOT NULL,
+	nascita date NOT NULL,
+	codice_fiscale varchar(40) NOT NULL
+);
+
+CREATE TABLE Voti
+(
+	id_voto int auto_increment primary key,
+	voto int NOT NULL,
+	data_voto date NOT NULL,
+	id_studente int,
+	id_materia int,
+	id_insegnanti int,
+	FOREIGN KEY(id_studente) references Studenti(id_studente),
+	FOREIGN KEY(id_materia) references Materia(id_materia),
+	FOREIGN KEY(id_insegnanti) references Insegnanti(id_insegnanti)
+);
+
+CREATE TABLE Materia
+(
+	id_materia int auto_increment primary key,
+	materia varchar(40) NOT NULL
+);
+
+CREATE TABLE Insegnanti
+(
+	id_insegnanti int PRIMARY KEY,
+	nome varchar(40) NOT NULL,
+	cognome varchar(40) NOT NULL
+);
