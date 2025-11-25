@@ -1,4 +1,3 @@
-<table>
 
 <?php
 
@@ -8,4 +7,3 @@
     echo "La somma di $a e $b è: $somma";
 
 ?>
-</table>
