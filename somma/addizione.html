@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Somma tra 2 numeri</title>
 </head>
+
 <body>
     <h1>Somma di due numeri</h1>
     <form action="somma.php" method="post">
         <label for="a">Numero 1:</label>
-        <input type="number" id="a" name="a"  placeholder= "inserisci primo numero">
-        <br>
+        <input type="number" id="a" name="a" placeholder="inserisci primo numero"><br>
         <label for="b">Numero 2:</label>
-        <input type="number" id="b" name="b"  placeholder= "inserisci secondo numero">
-        <br>
-        <button type="submit">Calcola somma</button>
+        <input type="number" id="b" name="b" placeholder="inserisci secondo numero"><br>
+        <lable for="operazione">
+            <select operazione name="operazione">
+                <option value="somma">Somma</option>
+                <option value="sottrazione">Sottrazione</option>
+                <option value="moltiplicazione">Moltiplicazione</option>
+                <option value="divisione">Divisione</option>
+            </select>
+            <input type="submit" value="calcola">
+        </lable>
     </form>
 </body>
+
 </html>
