@@ -1,0 +1,13 @@
+.tabella{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px 0;
+    text-align: center;
+}
+h1{
+    background-color: #007bff;
+    color: #ffffff;
+}
+body{
+    text-align: center;
+}

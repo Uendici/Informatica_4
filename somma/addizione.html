@@ -6,12 +6,14 @@
 </head>
 
 <body>
-    <h1>Somma di due numeri</h1>
+    <h1>Calcolatrice</h1>
     <form action="somma.php" method="post">
+        <link rel="stylesheet" href="foglio.css">
+        <elemento class="tabella">
         <label for="a">Numero 1:</label>
-        <input type="number" id="a" name="a" placeholder="inserisci primo numero"><br>
+        <input type="number" id="a" name="a" placeholder="inserisci primo numero"><br><br><br>
         <label for="b">Numero 2:</label>
-        <input type="number" id="b" name="b" placeholder="inserisci secondo numero"><br>
+        <input type="number" id="b" name="b" placeholder="inserisci secondo numero"><br><br><br>
         <lable for="operazione">
             <select operazione name="operazione">
                 <option value="somma">Somma</option>
@@ -21,6 +23,7 @@
             </select>
             <input type="submit" value="calcola">
         </lable>
+        </elemento>
     </form>
 </body>
 
